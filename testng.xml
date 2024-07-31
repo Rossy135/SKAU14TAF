@@ -8,7 +8,7 @@
                     <include name="endToEndTest"/>
                 </methods>
             </class>
-            <class name="com.skilo.gui.LoginTest">
+            <class name="com.skilo.gui.com.skilo.gui.LoginTest">
                 <methods>
                     <include name="verifyAlreadyRegisteredUserCanSuccessfullyLogin"/>
                     <include name="verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithWrongPassword"/>

@@ -1,5 +1,7 @@
 package com.skillo.POM;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +28,8 @@ public class LoginPage extends ISkillo {
     private WebElement loginFormRegistrationLink;
     @FindBy(xpath = "//div[@class=\"toast-message ng-star-inserted\"]")
     private WebElement popUpMsg;
+    @FindBy(id = "nav-link-profile")
+    private WebElement navToProfileButton;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -80,6 +84,6 @@ public class LoginPage extends ISkillo {
         }
 
         return  isShown;
-    };
+    }
 
 }

@@ -1,9 +1,6 @@
 package com.skillo.POM;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,9 +12,14 @@ public class ProfilePage extends ISkillo {
     @FindBy(id = "upload-img")
     private WebElement uploadProfilePic;
     @FindBy(id = "nav-link-profile")
-    private WebElement navToProfileButton;
+    public WebElement navToProfileButton;
     @FindBy(className = "profile-image-source")
     private WebElement imgSource;
+    @FindBy(xpath = "//div//h2")
+    private WebElement userNameInMyProfile;
+    @FindBy(xpath = "//*[@class=\"fas fa-sign-out-alt fa-lg\"]")
+    private  WebElement signOutButton;
+
 
     public ProfilePage(WebDriver driver) {
         super(driver);
@@ -44,17 +46,25 @@ public class ProfilePage extends ISkillo {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
-    };
+    }
+
+    ;
 
     public void uploadProfilePic(File file) {
         uploadProfilePic.sendKeys(file.getAbsolutePath());
         System.out.println("CONFIRMATION # The image was successfully uploaded");
-    };
+    }
+
+    ;
 
     public boolean isProfilePicDisplayed() {
         System.out.println("CONFIRMATION # The Profile pic is displayed");
         wait.until(ExpectedConditions.visibilityOf(imgSource));
         String imgUrl = imgSource.getAttribute("src");
         return imgUrl.contains("https://i.imgur.com");
-    };
+    }
+
 }
+
+
+

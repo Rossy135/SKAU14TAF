@@ -1,9 +1,7 @@
 package com.skillo.POM;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.github.javafaker.Faker;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,14 +15,14 @@ public class ISkillo {
     public ISkillo(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    };
+    }
 
     public void navigateTo(String pageURLsufix) {
         String currentURL = BASE_URL + pageURLsufix;
         driver.get(currentURL);
 
         waitPageTobeFullLoaded();
-    };
+    }
 
     public void waitAndClick(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
@@ -34,7 +32,7 @@ public class ISkillo {
         System.out.println("The user has clicked on element");
 
         waitPageTobeFullLoaded();
-    };
+    }
 
     public void typeTextInField(WebElement element, String inputText) {
         wait.until(ExpectedConditions.visibilityOf(element));
@@ -42,7 +40,7 @@ public class ISkillo {
         element.sendKeys(inputText);
 
         waitPageTobeFullLoaded();
-    };
+    }
 
     //This waiting strategy is very appropriate for a small demo test sites
     //However if we want to execute quickly scripts a waiting utils will be needed
@@ -50,17 +48,17 @@ public class ISkillo {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
         System.out.println("DOM tree is fully loaded");
-    };
+    }
 
     public boolean isUrlLoaded(String pageURL) {
         waitPageTobeFullLoaded();
         return wait.until(ExpectedConditions.urlContains(pageURL));
-    };
+    }
 
     public String getPlaceholder(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
         return element.getAttribute("placeholder");
-    };
+    }
 
     public boolean isPlaceholderCorrect(WebElement element, String expectedPlaceholder) {
         try {
@@ -70,7 +68,7 @@ public class ISkillo {
              System.out.println("ERROR! The placeholder for the element is not correct or element is not found.");
             return false;
         }
-    };
+    }
 
     public boolean isTitleShown(WebElement element) {
         boolean isTitleShown = false;
@@ -83,5 +81,31 @@ public class ISkillo {
              System.out.println("ERROR ! The title is not presented the user is not on Registration page");
         }
         return isTitleShown;
-    };
+    }
+
+    public boolean isElementPresent(WebDriver driver, By locator) {
+        try {
+            WebElement el = driver.findElement(locator);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+
+//    public boolean isTheLoginSuccessful(WebElement element) {
+//        boolean isTheLoginSuccessful = false;
+//
+//        try {
+//            wait.until(ExpectedConditions.visibilityOf(element));
+//            isTheLoginSuccessful = true;
+//        } catch (NoSuchElementException e) {
+//            System.out.println("The Login was not successful");
+//        }
+//            return isTheLoginSuccessful;
+//
+//    }
+    }
+    public static void main(String[] args) {
+        Faker javaFaker = Faker.instance();
+    }
+
 }
