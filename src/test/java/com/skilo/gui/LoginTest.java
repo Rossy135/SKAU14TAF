@@ -28,10 +28,10 @@ public class LoginTest extends TestObject {
         loginPage.providePassword(PASSWORD);
         loginPage.clickSubmitButton();
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
-        Assert.assertTrue(profilePage.isElementPresent(getWebDriver(), By.id("nav-link-profile")), "The user couldn't log in successfully");
+        Assert.assertTrue(profilePage.isNavToProfileButtonShown());
         profilePage.clickOnProfileButton();
         Assert.assertEquals(USERNAME,profilePage.getUsername());
-        Assert.assertTrue(profilePage.isElementPresent(getWebDriver(), By.xpath("//*[@class=\"fas fa-sign-out-alt fa-lg\"]")));
+        Assert.assertTrue(homePage.isLogOutButtonShown());
 
     }
 
@@ -57,8 +57,8 @@ public class LoginTest extends TestObject {
         loginPage.clickSubmitButton();
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
 
-        Assert.assertFalse(profilePage.isElementPresent(getWebDriver(), By.id("nav-link-profile")), "The user could log in successfully with wrong password");
-        Assert.assertFalse(profilePage.isElementPresent(getWebDriver(), By.xpath("//*[@class=\"fas fa-sign-out-alt fa-lg\"]")));
+        Assert.assertFalse(profilePage.isNavToProfileButtonShown(),"The user could log in successfully with wrong password");
+        Assert.assertFalse(homePage.isLogOutButtonShown(),"The user could log in successfully with wrong password");
 
         }
 
@@ -83,8 +83,8 @@ public class LoginTest extends TestObject {
         loginPage.clickSubmitButton();
 
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
-        Assert.assertFalse(profilePage.isElementPresent(getWebDriver(), By.id("nav-link-profile")), "The user could log in successfully with wrong password");
-        Assert.assertFalse(profilePage.isElementPresent(getWebDriver(), By.xpath("//*[@class=\"fas fa-sign-out-alt fa-lg\"]")));
+        Assert.assertFalse(profilePage.isNavToProfileButtonShown(),"The user could log in successfully with wrong username");
+        Assert.assertFalse(homePage.isLogOutButtonShown(),"The user could log in successfully with wrong username");
 
     }
 
@@ -110,8 +110,8 @@ public class LoginTest extends TestObject {
         loginPage.providePassword(PASSWORD);
         loginPage.clickSubmitButton();
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
-        Assert.assertFalse(profilePage.isElementPresent(getWebDriver(), By.id("nav-link-profile")), "The user could log in successfully with no credentials");
-        Assert.assertFalse(profilePage.isElementPresent(getWebDriver(), By.xpath("//*[@class=\"fas fa-sign-out-alt fa-lg\"]")));
+        Assert.assertFalse(profilePage.isNavToProfileButtonShown(),"The user could log in successfully without provided credentials");
+        Assert.assertFalse(homePage.isLogOutButtonShown(),"The user could log in successfully without provided credentials");
 
     }
 }

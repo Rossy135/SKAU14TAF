@@ -91,6 +91,8 @@ public class ISkillo {
             return false;
         }
 
+
+
 //    public boolean isTheLoginSuccessful(WebElement element) {
 //        boolean isTheLoginSuccessful = false;
 //

@@ -18,7 +18,7 @@ public class ProfilePage extends ISkillo {
     @FindBy(xpath = "//div//h2")
     private WebElement userNameInMyProfile;
     @FindBy(xpath = "//*[@class=\"fas fa-sign-out-alt fa-lg\"]")
-    private  WebElement signOutButton;
+    public  WebElement signOutButton;
 
 
     public ProfilePage(WebDriver driver) {
@@ -63,6 +63,17 @@ public class ProfilePage extends ISkillo {
         String imgUrl = imgSource.getAttribute("src");
         return imgUrl.contains("https://i.imgur.com");
     }
+
+    public boolean isNavToProfileButtonShown() {
+        boolean isButtonShown = false;
+        try {
+            wait.until(ExpectedConditions.visibilityOf(navToProfileButton));
+            isButtonShown = true;
+        } catch (TimeoutException e) {
+            System.out.println("ERROR ! The navigation profile button was not presented to the user");
+        }
+        return isButtonShown;
+    };
 
 }
 

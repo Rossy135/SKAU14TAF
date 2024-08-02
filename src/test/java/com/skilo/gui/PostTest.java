@@ -21,10 +21,10 @@ public class PostTest extends TestObject{
     }
 
     @Test(dataProvider = "PostTestDataProvider")
-    public void verifyUserCanCreateNewPost(String user, String password, String username, File file, String caption) {
+    public void verifyUserCanCreateNewPost(File file, String caption) {
 
-        user = "jussy_";
-        password = "Roska666.";
+        String user = "jussy_";
+        String password = "Roska666.";
         final String HOME_PAGE_URL = "posts/all";
         final String LOGIN_PAGE_URL = "users/login";
 
@@ -70,10 +70,10 @@ public class PostTest extends TestObject{
     }
 
     @Test(dataProvider = "PostTestDataProvider")
-    public void verifyUserCanCreateNewPostAndDeleteIt(String user, String password, String username, File file, String caption) {
+    public void verifyUserCanCreateNewPostAndDeleteIt(File file, String caption) {
 
-        user = "jussy_";
-        password = "Roska666.";
+        String user = "jussy_";
+        String password = "Roska666.";
         final String HOME_PAGE_URL = "posts/all";
         final String LOGIN_PAGE_URL = "users/login";
 

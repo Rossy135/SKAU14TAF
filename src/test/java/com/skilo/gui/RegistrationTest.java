@@ -33,7 +33,7 @@ public class RegistrationTest extends TestObject{
         ProfilePage profilePage = new ProfilePage (super.getWebDriver());
         profilePage.clickOnProfileButton();
         Assert.assertEquals(USERNAME,profilePage.getUsername());
-        Assert.assertTrue(profilePage.isElementPresent(getWebDriver(), By.xpath("//*[@class=\"fas fa-sign-out-alt fa-lg\"]")));
+        Assert.assertTrue(homePage.isLogOutButtonShown());
     }
 
     @Test
@@ -47,10 +47,7 @@ public class RegistrationTest extends TestObject{
         System.out.println("THE RANDOM GENERATED USERNAME IS: " + USERNAME);
         System.out.println("THE RANDOM GENERATED EMAIL IS: " + EMAIL);
 
-        System.out.println("STEP 1: Not logged in user has open the ISkilo HomePage.");
         homePage.openHomePage();
-
-        System.out.println("STEP 2: The user has navigated to ISkilo LoginPage");
         homePage.clickOnNavigationLoginButton();
 
         LoginPage loginPage = new LoginPage(super.getWebDriver());
@@ -60,7 +57,7 @@ public class RegistrationTest extends TestObject{
         registrationPage.fullRegistrationInputsAndActions(USERNAME, EMAIL, "123456");
 
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
-        Assert.assertFalse(profilePage.isElementPresent(getWebDriver(), By.id("nav-link-profile")), "ERROR: The user could register with invalid data!");
+        Assert.assertFalse(profilePage.isNavToProfileButtonShown());
         profilePage.clickOnProfileButton();
         Assert.assertNotEquals(USERNAME,profilePage.getUsername());
 

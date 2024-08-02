@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/CODE/SK_AU_14/v5/SKAU14TAF">
+    <test verbose="2" preserve-order="true" name="E:/Rossy/Skillo/SKAU14TAF">
         <classes>
-            <class name="com.skilo.gui.EndToEndTest">
-                <methods>
-                    <include name="endToEndTest"/>
-                </methods>
-            </class>
-            <class name="com.skilo.gui.com.skilo.gui.LoginTest">
+            <class name="com.skilo.gui.LoginTest">
                 <methods>
                     <include name="verifyAlreadyRegisteredUserCanSuccessfullyLogin"/>
                     <include name="verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithWrongPassword"/>
@@ -18,6 +13,7 @@
             </class>
             <class name="com.skilo.gui.PostTest">
                 <methods>
+                    <include name="verifyUserCanCreateNewPost"/>
                     <include name="verifyUserCanCreateNewPostAndDeleteIt"/>
                 </methods>
             </class>

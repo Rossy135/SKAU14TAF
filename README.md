@@ -32,7 +32,7 @@ Many QA engineers are connected via the fast variety of  test automation activit
 ## Test activities performed with Selenium 4+ and TestNG Java unit framework:
 List of the test cases.
 - Registration feature
-  - Verify user cn registered in the system with valid data
+  - Verify user cаn register in the system with valid data
   - Verify user cannot register in the system with invalid data
 
 
@@ -44,12 +44,14 @@ List of the test cases.
 
 
 - Post feature
-    - Verify  user can create a new post and delete the new post
+      - Verify  user can create a new post
+      - Verify  user can create a new post and delete the new post
+
 
 ## Installation
 
 - Clone the repository
-git clone myGitHub repo links lives here
+git clone myGitHub repo links lives here:
 - Make sure you have JAVA version 21and up
 - Make sure you have Maven version 3.0.7 and up
 

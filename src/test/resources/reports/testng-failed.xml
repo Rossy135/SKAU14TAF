@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="E:/Rossy/Skillo/SKAU14TAF(failed)" verbose="0">
+    <classes>
+      <class name="com.skilo.gui.RegistrationTest">
+        <methods>
+          <include name="verifyUserCanNotRegisterWithINValidData"/>
+          <include name="setupTestSuite"/>
+          <include name="cleanFiles"/>
+          <include name="tearDownTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.skilo.gui.RegistrationTest -->
+      <class name="com.skilo.gui.PostTest">
+        <methods>
+          <include name="setupTestSuite"/>
+          <include name="cleanFiles"/>
+          <include name="tearDownTest"/>
+          <include name="verifyUserCanCreateNewPost"/>
+          <include name="verifyUserCanCreateNewPostAndDeleteIt"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.skilo.gui.PostTest -->
+    </classes>
+  </test> <!-- E:/Rossy/Skillo/SKAU14TAF(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
