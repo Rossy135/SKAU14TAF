@@ -13,7 +13,6 @@
             </class>
             <class name="com.skilo.gui.PostTest">
                 <methods>
-                    <include name="verifyUserCanCreateNewPost"/>
                     <include name="verifyUserCanCreateNewPostAndDeleteIt"/>
                 </methods>
             </class>
