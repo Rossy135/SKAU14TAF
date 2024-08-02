@@ -3,6 +3,7 @@ package com.skilo.gui;
 import com.skillo.POM.*;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static com.skillo.POM.LoginPage.LOGIN_PAGE_SUFIX;
 
@@ -15,7 +16,6 @@ public class LoginTest extends TestObject {
         final String USERNAME = "jussy_";
         final String PASSWORD = "Roska666.";
         final String HOME_PAGE_URL = "posts/all";
-//        String URL  = getWebDriver().getCurrentUrl();
 
 
         HomePage homePage = new HomePage(super.getWebDriver());

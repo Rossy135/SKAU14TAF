@@ -14,8 +14,8 @@
     <developers>
         <developer>
             <id>StudentID</id>
-            <name>Student Full Name</name>
-            <email>Student email for companies to be contacted</email>
+            <name>Rositsa Lyubenova</name>
+            <email>rositsa.iv.hristova@gmail.com</email>
         </developer>
     </developers>
 
@@ -90,11 +90,20 @@
             <artifactId>log4j-core</artifactId>
             <version>2.23.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.7</version>
         </dependency>
     </dependencies>
 </project>

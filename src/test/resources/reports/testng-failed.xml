@@ -12,16 +12,6 @@
           <include name="setUpTest"/>
         </methods>
       </class> <!-- com.skilo.gui.RegistrationTest -->
-      <class name="com.skilo.gui.PostTest">
-        <methods>
-          <include name="setupTestSuite"/>
-          <include name="cleanFiles"/>
-          <include name="tearDownTest"/>
-          <include name="verifyUserCanCreateNewPost"/>
-          <include name="verifyUserCanCreateNewPostAndDeleteIt"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- com.skilo.gui.PostTest -->
     </classes>
   </test> <!-- E:/Rossy/Skillo/SKAU14TAF(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
