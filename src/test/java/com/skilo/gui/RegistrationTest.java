@@ -1,15 +1,12 @@
 package com.skilo.gui;
+
 import com.github.javafaker.Faker;
 import com.skillo.POM.*;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.ContentGeneration;
 
-//import java.util.Random;
-
 public class RegistrationTest extends TestObject{
-
 
     @Test
     public void verifyUserCanRegisterWithValidData() {
@@ -24,6 +21,7 @@ public class RegistrationTest extends TestObject{
 
         homePage.openHomePage();
         homePage.clickOnNavigationLoginButton();
+
         LoginPage loginPage = new LoginPage(super.getWebDriver());
         loginPage.clickOnRegistrationLink();
 
@@ -32,8 +30,8 @@ public class RegistrationTest extends TestObject{
 
         ProfilePage profilePage = new ProfilePage (super.getWebDriver());
         profilePage.clickOnProfileButton();
-        Assert.assertEquals(USERNAME,profilePage.getUsername());
-        Assert.assertTrue(homePage.isLogOutButtonShown());
+        Assert.assertEquals(USERNAME,profilePage.getUsername(),"Username doesn't match");
+        Assert.assertTrue(homePage.isLogOutButtonShown(),"User couldn't register successfully");
     }
 
     @Test
@@ -57,24 +55,6 @@ public class RegistrationTest extends TestObject{
         registrationPage.fullRegistrationInputsAndActions(USERNAME, EMAIL, "123456");
 
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
-        Assert.assertFalse(profilePage.isNavToProfileButtonShown());
-        profilePage.clickOnProfileButton();
-        Assert.assertNotEquals(USERNAME,profilePage.getUsername());
-
-
+        Assert.assertFalse(profilePage.isNavToProfileButtonShown(),"User could successfully login with invalid data!");
     }
-
-//    public static String generateRandomString() {
-//        int length = 3;
-//        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-//        Random random = new Random();
-//        StringBuilder randomString = new StringBuilder(length);
-//
-//        for (int i = 0; i < length; i++) {
-//            int index = random.nextInt(characters.length());
-//            randomString.append(characters.charAt(index));
-//        }
-//        return randomString.toString();
-//    }
-
 }

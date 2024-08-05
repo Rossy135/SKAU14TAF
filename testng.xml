@@ -14,6 +14,7 @@
             <class name="com.skilo.gui.PostTest">
                 <methods>
                     <include name="verifyUserCanCreateNewPostAndDeleteIt"/>
+                    <include name="verifyUserCouldCancelDeletingAPost"/>
                 </methods>
             </class>
             <class name="com.skilo.gui.RegistrationTest">

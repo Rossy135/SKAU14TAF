@@ -21,6 +21,7 @@ public class ProfilePage extends ISkillo {
     public  WebElement signOutButton;
 
 
+
     public ProfilePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);

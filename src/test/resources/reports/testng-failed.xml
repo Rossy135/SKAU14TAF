@@ -5,10 +5,10 @@
     <classes>
       <class name="com.skilo.gui.PostTest">
         <methods>
+          <include name="verifyUserCouldCancelDeletingAPost" invocation-numbers="0"/>
           <include name="setupTestSuite"/>
           <include name="cleanFiles"/>
           <include name="tearDownTest"/>
-          <include name="verifyUserCanCreateNewPostAndDeleteIt" invocation-numbers="0"/>
           <include name="setUpTest"/>
         </methods>
       </class> <!-- com.skilo.gui.PostTest -->

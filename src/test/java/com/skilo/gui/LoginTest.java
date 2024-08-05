@@ -1,12 +1,9 @@
 package com.skilo.gui;
 
 import com.skillo.POM.*;
-import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static com.skillo.POM.LoginPage.LOGIN_PAGE_SUFIX;
-
 
 public class LoginTest extends TestObject {
 
@@ -17,24 +14,23 @@ public class LoginTest extends TestObject {
         final String PASSWORD = "Roska666.";
         final String HOME_PAGE_URL = "posts/all";
 
-
         HomePage homePage = new HomePage(super.getWebDriver());
         homePage.openHomePage();
         homePage.isUrlLoaded(HOME_PAGE_URL);
         homePage.clickOnNavigationLoginButton();
+
         LoginPage loginPage = new LoginPage(super.getWebDriver());
         loginPage.isUrlLoaded(LOGIN_PAGE_SUFIX);
         loginPage.provideUserName(USERNAME);
         loginPage.providePassword(PASSWORD);
         loginPage.clickSubmitButton();
+
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
         Assert.assertTrue(profilePage.isNavToProfileButtonShown());
         profilePage.clickOnProfileButton();
-        Assert.assertEquals(USERNAME,profilePage.getUsername());
-        Assert.assertTrue(homePage.isLogOutButtonShown());
-
+        Assert.assertEquals(USERNAME,profilePage.getUsername(),"The username doesn't match");
+        Assert.assertTrue(homePage.isLogOutButtonShown(),"The user couldn't login successfully");
     }
-
 
     @Test
     public void verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithWrongPassword() {
@@ -48,18 +44,17 @@ public class LoginTest extends TestObject {
         homePage.waitPageTobeFullLoaded();
         homePage.isUrlLoaded(HOME_PAGE_URL);
         homePage.clickOnNavigationLoginButton();
+
         LoginPage loginPage = new LoginPage(super.getWebDriver());
         loginPage.waitPageTobeFullLoaded();
         loginPage.isUrlLoaded(LOGIN_PAGE_SUFIX);
-
         loginPage.provideUserName(USERNAME);
         loginPage.providePassword(PASSWORD);
         loginPage.clickSubmitButton();
-        ProfilePage profilePage = new ProfilePage(super.getWebDriver());
 
+        ProfilePage profilePage = new ProfilePage(super.getWebDriver());
         Assert.assertFalse(profilePage.isNavToProfileButtonShown(),"The user could log in successfully with wrong password");
         Assert.assertFalse(homePage.isLogOutButtonShown(),"The user could log in successfully with wrong password");
-
         }
 
     @Test
@@ -73,8 +68,8 @@ public class LoginTest extends TestObject {
         homePage.openHomePage();
         homePage.waitPageTobeFullLoaded();
         homePage.isUrlLoaded(HOME_PAGE_URL);
-
         homePage.clickOnNavigationLoginButton();
+
         LoginPage loginPage = new LoginPage(super.getWebDriver());
         loginPage.waitPageTobeFullLoaded();
         loginPage.isUrlLoaded(LOGIN_PAGE_SUFIX);
@@ -85,7 +80,6 @@ public class LoginTest extends TestObject {
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
         Assert.assertFalse(profilePage.isNavToProfileButtonShown(),"The user could log in successfully with wrong username");
         Assert.assertFalse(homePage.isLogOutButtonShown(),"The user could log in successfully with wrong username");
-
     }
 
     @Test
@@ -96,22 +90,20 @@ public class LoginTest extends TestObject {
         final String HOME_PAGE_URL = "posts/all";
 
         HomePage homePage = new HomePage(super.getWebDriver());
-
         homePage.openHomePage();
         homePage.waitPageTobeFullLoaded();
         homePage.isUrlLoaded(HOME_PAGE_URL);
-
         homePage.clickOnNavigationLoginButton();
+
         LoginPage loginPage = new LoginPage(super.getWebDriver());
         loginPage.waitPageTobeFullLoaded();
         loginPage.isUrlLoaded(LOGIN_PAGE_SUFIX);
-
         loginPage.provideUserName(USERNAME);
         loginPage.providePassword(PASSWORD);
         loginPage.clickSubmitButton();
+
         ProfilePage profilePage = new ProfilePage(super.getWebDriver());
         Assert.assertFalse(profilePage.isNavToProfileButtonShown(),"The user could log in successfully without provided credentials");
         Assert.assertFalse(homePage.isLogOutButtonShown(),"The user could log in successfully without provided credentials");
-
     }
 }

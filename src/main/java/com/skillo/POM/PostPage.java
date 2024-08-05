@@ -22,6 +22,8 @@ public class PostPage extends ISkillo {
     private WebElement captionElement;
     @FindBy(id = "create-post")
     private WebElement createP0ostButton;
+    @FindBy(id="toast-container")
+    private WebElement PopUpDeletedPost;
 
     public PostPage(WebDriver driver) {
         super(driver);
@@ -34,7 +36,6 @@ public class PostPage extends ISkillo {
         try {
             isVisible = wait.until(ExpectedConditions.visibilityOf(image)).isDisplayed();
 
-            System.out.println("CONFIRMATION # The file is visible.");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
             System.out.println("ERROR : The file is not visible");
@@ -46,24 +47,34 @@ public class PostPage extends ISkillo {
 
     public String getImageName() {
         String imageName = imageTextElement.getAttribute("placeholder");
-        System.out.println("CONFIRMATION # The image name is: " + imageName);
         return imageName;
     };
 
     public void uploadPicture(File file) {
         uploadField.sendKeys(file.getAbsolutePath());
-        System.out.println("CONFIRMATION # The file was successfully uploaded");
     };
 
     public void providePostCaption(String caption) {
         wait.until(ExpectedConditions.visibilityOf(captionElement));
         captionElement.sendKeys(caption);
-        System.out.println("CONFIRMATION # The user has provided caption text :" + caption);
     };
 
     public void clickCreatePostButton() {
         wait.until(ExpectedConditions.visibilityOf(createP0ostButton));
         createP0ostButton.click();
-        System.out.println("CONFIRMATION # The user has clicked on create post button");
+    };
+    public boolean isImageDeleted() {
+        boolean isDeleted = false;
+
+        try {
+            isDeleted = wait.until(ExpectedConditions.visibilityOf(PopUpDeletedPost)).isDisplayed();
+
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+            System.out.println("ERROR : The image was not deleted");
+            isDeleted = false;
+        };
+
+        return isDeleted;
     };
 }
