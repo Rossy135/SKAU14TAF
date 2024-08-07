@@ -9,18 +9,12 @@ import java.io.File;
 import java.util.List;
 
 public class ProfilePage extends ISkillo {
-    @FindBy(id = "upload-img")
-    private WebElement uploadProfilePic;
     @FindBy(id = "nav-link-profile")
-    public WebElement navToProfileButton;
-    @FindBy(className = "profile-image-source")
-    private WebElement imgSource;
+    private WebElement navToProfileButton;
     @FindBy(xpath = "//div//h2")
     private WebElement userNameInMyProfile;
-    @FindBy(xpath = "//*[@class=\"fas fa-sign-out-alt fa-lg\"]")
-    public  WebElement signOutButton;
-
-
+    @FindBy(xpath = "//app-post")
+    private List<WebElement> postsInProfile;
 
     public ProfilePage(WebDriver driver) {
         super(driver);
@@ -32,37 +26,18 @@ public class ProfilePage extends ISkillo {
     }
 
     public String getUsername() {
-        WebElement username = driver.findElement(By.tagName("h2"));
-        return username.getText();
+        wait.until(ExpectedConditions.visibilityOf(userNameInMyProfile));
+        return userNameInMyProfile.getText();
     }
 
     public int getPostCount() {
-        List<WebElement> posts = driver.findElements(By.tagName("app-post"));
-        return posts.size();
+        return postsInProfile.size();
     }
 
     public void clickPost(int postIndex) {
-        List<WebElement> posts = driver.findElements(By.tagName("app-post"));
-        posts.get(postIndex).click();
-
+        postsInProfile.get(postIndex).click();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
-    }
-
-    ;
-
-    public void uploadProfilePic(File file) {
-        uploadProfilePic.sendKeys(file.getAbsolutePath());
-        System.out.println("CONFIRMATION # The image was successfully uploaded");
-    }
-
-    ;
-
-    public boolean isProfilePicDisplayed() {
-        System.out.println("CONFIRMATION # The Profile pic is displayed");
-        wait.until(ExpectedConditions.visibilityOf(imgSource));
-        String imgUrl = imgSource.getAttribute("src");
-        return imgUrl.contains("https://i.imgur.com");
     }
 
     public boolean isNavToProfileButtonShown() {
@@ -74,8 +49,7 @@ public class ProfilePage extends ISkillo {
             System.out.println("ERROR ! The navigation profile button was not presented to the user");
         }
         return isButtonShown;
-    };
-
+    }
 }
 
 

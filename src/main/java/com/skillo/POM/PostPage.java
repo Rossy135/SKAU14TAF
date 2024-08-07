@@ -11,7 +11,6 @@ import java.io.File;
 
 public class PostPage extends ISkillo {
 
-    private final String POST_PAGE_URL = "posts/create";
     @FindBy(css = "img.image-preview")
     private WebElement image;
     @FindBy(css = "input.input-lg")
@@ -28,7 +27,7 @@ public class PostPage extends ISkillo {
     public PostPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
-    };
+    }
 
     public boolean isImageVisible() {
         boolean isVisible = false;
@@ -40,29 +39,29 @@ public class PostPage extends ISkillo {
             e.printStackTrace();
             System.out.println("ERROR : The file is not visible");
             isVisible = false;
-        };
+        }
 
         return isVisible;
-    };
+    }
 
     public String getImageName() {
         String imageName = imageTextElement.getAttribute("placeholder");
         return imageName;
-    };
+    }
 
     public void uploadPicture(File file) {
         uploadField.sendKeys(file.getAbsolutePath());
-    };
+    }
 
     public void providePostCaption(String caption) {
         wait.until(ExpectedConditions.visibilityOf(captionElement));
         captionElement.sendKeys(caption);
-    };
+    }
 
     public void clickCreatePostButton() {
         wait.until(ExpectedConditions.visibilityOf(createP0ostButton));
         createP0ostButton.click();
-    };
+    }
     public boolean isImageDeleted() {
         boolean isDeleted = false;
 
@@ -73,8 +72,8 @@ public class PostPage extends ISkillo {
             e.printStackTrace();
             System.out.println("ERROR : The image was not deleted");
             isDeleted = false;
-        };
+        }
 
         return isDeleted;
-    };
+    }
 }

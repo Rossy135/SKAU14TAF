@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class HomePage extends ISkillo {
     public static final String HOME_PAGE_SUFIX = "posts/all";
     @FindBy(id = "nav-link-login")
-    public WebElement navigationLoginButton; // = driver.findElement(By.id("nav-link-login"));
+    public WebElement navigationLoginButton;
     @FindBy(id = "nav-link-new-post")
     private WebElement navigationNewPostButton;
     @FindBy(xpath = "//i[@class='fas fa-sign-out-alt fa-lg']")
@@ -19,23 +19,19 @@ public class HomePage extends ISkillo {
     public HomePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
-    };
+    }
 
     public void openHomePage() {
         navigateTo(HOME_PAGE_SUFIX);
-    };
+    }
 
     public void clickOnNavigationLoginButton() {
         waitAndClick(navigationLoginButton);
-    };
+    }
 
     public void clickOnNewPostButton() {
         waitAndClick(navigationNewPostButton);
-    };
-
-    public void clickOnLogOutButton() {
-        waitAndClick(navigationLogOutButton);
-    };
+    }
 
     public boolean isNewPostButtonToShown() {
         boolean isButtonShown = false;
@@ -46,7 +42,7 @@ public class HomePage extends ISkillo {
             System.out.println("ERROR ! The navigation New Post button was not presented to the user");
         }
         return isButtonShown;
-    };
+    }
 
     public boolean isLogOutButtonShown() {
         boolean isButtonShown = false;
@@ -57,7 +53,5 @@ public class HomePage extends ISkillo {
             System.out.println("ERROR ! The navigation logout button was not presented to the user");
         }
         return isButtonShown;
-    };
-
-
+    }
 }

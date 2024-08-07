@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="196.267" tests="8" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="193.264" tests="8" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="21"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.88\chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.99\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="E:\Rossy\Skillo\SKAU14TAF\target\test-classes;E:\Rossy\Skillo\SKAU14TAF\target\classes;C:\Users\User\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\User\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\User\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\User\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\User\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\User\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\User\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\User\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\User\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\User\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;"/>
+    <property name="java.class.path" value="E:\Rossy\Skillo\SKAU14TAF\target\test-classes;E:\Rossy\Skillo\SKAU14TAF\target\classes;C:\Users\User\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\User\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\User\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\User\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\User\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\User\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\User\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\jdk-21.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire10409545275344719080\surefirebooter-20240806015553916_3.jar C:\Users\User\AppData\Local\Temp\surefire10409545275344719080 2024-08-06T01-55-53_308-jvmRun1 surefire-20240806015553916_1tmp surefire_0-20240806015553916_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire427883892100621790\surefirebooter-20240807181500377_3.jar C:\Users\User\AppData\Local\Temp\surefire427883892100621790 2024-08-07T18-14-59_788-jvmRun1 surefire-20240807181500377_1tmp surefire_0-20240807181500377_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="E:\Rossy\Skillo\SKAU14TAF\target\test-classes;E:\Rossy\Skillo\SKAU14TAF\target\classes;C:\Users\User\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\User\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\User\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\User\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\User\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\User\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\User\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\User\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\User\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\User\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;"/>
+    <property name="surefire.test.class.path" value="E:\Rossy\Skillo\SKAU14TAF\target\test-classes;E:\Rossy\Skillo\SKAU14TAF\target\classes;C:\Users\User\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\User\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\User\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\User\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\User\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\User\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\User\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\User"/>
     <property name="user.language" value="en"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire10409545275344719080\surefirebooter-20240806015553916_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire427883892100621790\surefirebooter-20240807181500377_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.1+12-29"/>
@@ -59,93 +59,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="verifyAlreadyRegisteredUserCanSuccessfullyLogin" classname="com.skilo.gui.LoginTest" time="5.282">
-    <system-out><![CDATA[01:55:55.450 [main] DEBUG org.testng.TestNG - suiteXmlPath: "E:\Rossy\Skillo\SKAU14TAF\testng.xml"
-01:55:57.253 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 16 ms.
-01:55:57.270 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
-01:55:57.272 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.273 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.274 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.274 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.275 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.275 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.276 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.276 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.277 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.277 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.277 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.278 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.278 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.279 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.281 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.282 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.283 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.284 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.289 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.289 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.291 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.292 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.292 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.293 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.293 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.293 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.294 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.294 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.294 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.294 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.295 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.295 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.295 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.295 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.296 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.297 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.297 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.298 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.301 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.301 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.303 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.303 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.304 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.304 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.305 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.305 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.306 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.306 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.307 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.307 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.308 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.308 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.308 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.309 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.309 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.310 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.311 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.311 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.316 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.316 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.316 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.317 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.319 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-01:55:57.326 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
-01:55:57.328 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-01:55:57.328 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-01:55:57.329 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-01:55:57.329 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-____________________________________________________________
-Deleting not needed files from folder with path: src\test\resources\reports\
+  <testcase name="verifyAlreadyRegisteredUserCanSuccessfullyLogin" classname="com.skilo.gui.LoginTest" time="5.192">
+    <system-out><![CDATA[Deleting not needed files from folder with path: src\test\resources\reports\
 All file are deleted in Directory: src\test\resources\reports\
-____________________________________________________________
-____________________________________________________________
 Deleting not needed files from folder with path: src\test\resources\screenshots\
 All file are deleted in Directory: src\test\resources\screenshots\
-____________________________________________________________
-01:55:57.488 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.8.0
-01:55:58.057 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=127 in cache (valid until 02:06:51 06/08/2024 EEST)
-01:55:58.059 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome127=127.0.6533.88 in cache (valid until 23:31:57 06/08/2024 EEST)
-01:55:58.060 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 127.0.6533.88 (resolved driver for Chrome 127)
-01:55:58.093 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 127.0.6533.88 found in cache
-01:55:58.094 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.88\chromedriver.exe
-01:55:58.109 [main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
 DOM tree is fully loaded
 DOM tree is fully loaded
 The user has clicked on element
@@ -158,13 +76,15 @@ DOM tree is fully loaded
 The user has clicked on element
 DOM tree is fully loaded
 ]]></system-out>
-    <system-err><![CDATA[Aug 06, 2024 1:56:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Aug 07, 2024 6:15:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 127
 ]]></system-err>
   </testcase>
-  <testcase name="verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithWrongPassword" classname="com.skilo.gui.LoginTest" time="47.958">
-    <system-out><![CDATA[The driver is about to be closed.
-DOM tree is fully loaded
+  <testcase name="verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithWrongPassword" classname="com.skilo.gui.LoginTest" time="47.169">
+    <system-out><![CDATA[DOM tree is fully loaded
 DOM tree is fully loaded
 DOM tree is fully loaded
 The user has clicked on element
@@ -178,13 +98,12 @@ DOM tree is fully loaded
 ERROR ! The navigation profile button was not presented to the user
 ERROR ! The navigation logout button was not presented to the user
 ]]></system-out>
-    <system-err><![CDATA[Aug 06, 2024 1:56:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Aug 07, 2024 6:15:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 127
 ]]></system-err>
   </testcase>
-  <testcase name="verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithWrongUsername" classname="com.skilo.gui.LoginTest" time="47.01">
-    <system-out><![CDATA[The driver is about to be closed.
-DOM tree is fully loaded
+  <testcase name="verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithWrongUsername" classname="com.skilo.gui.LoginTest" time="46.14">
+    <system-out><![CDATA[DOM tree is fully loaded
 DOM tree is fully loaded
 DOM tree is fully loaded
 The user has clicked on element
@@ -198,13 +117,12 @@ DOM tree is fully loaded
 ERROR ! The navigation profile button was not presented to the user
 ERROR ! The navigation logout button was not presented to the user
 ]]></system-out>
-    <system-err><![CDATA[Aug 06, 2024 1:57:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Aug 07, 2024 6:16:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 127
 ]]></system-err>
   </testcase>
-  <testcase name="verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithNotProvidedCredentials" classname="com.skilo.gui.LoginTest" time="46.837">
-    <system-out><![CDATA[The driver is about to be closed.
-DOM tree is fully loaded
+  <testcase name="verifyAlreadyRegisteredUserCanNotSuccessfullyLoginWithNotProvidedCredentials" classname="com.skilo.gui.LoginTest" time="46.106">
+    <system-out><![CDATA[DOM tree is fully loaded
 DOM tree is fully loaded
 DOM tree is fully loaded
 The user has clicked on element
@@ -218,13 +136,12 @@ DOM tree is fully loaded
 ERROR ! The navigation profile button was not presented to the user
 ERROR ! The navigation logout button was not presented to the user
 ]]></system-out>
-    <system-err><![CDATA[Aug 06, 2024 1:57:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Aug 07, 2024 6:16:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 127
 ]]></system-err>
   </testcase>
-  <testcase name="verifyUserCanCreateNewPostAndDeleteIt[jussy_, Roska666., jussy_, src\test\resources\uploads\testUpload.jpg, Testing create post caption](1)" classname="com.skilo.gui.PostTest" time="8.168">
-    <system-out><![CDATA[The driver is about to be closed.
-DOM tree is fully loaded
+  <testcase name="verifyUserCanCreateNewPostAndDeleteIt[jussy_, Roska666., jussy_, src\test\resources\uploads\testUpload.jpg, Testing create post caption](1)" classname="com.skilo.gui.PostTest" time="8.143">
+    <system-out><![CDATA[DOM tree is fully loaded
 DOM tree is fully loaded
 The user has clicked on element
 DOM tree is fully loaded
@@ -238,11 +155,11 @@ DOM tree is fully loaded
 DOM tree is fully loaded
 DOM tree is fully loaded
 ]]></system-out>
-    <system-err><![CDATA[Aug 06, 2024 1:58:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Aug 07, 2024 6:17:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 127
 ]]></system-err>
   </testcase>
-  <testcase name="verifyUserCouldCancelDeletingAPost[jussy_, Roska666., jussy_, src\test\resources\uploads\testUpload.jpg, Testing create post caption](1)" classname="com.skilo.gui.PostTest" time="7.278">
+  <testcase name="verifyUserCouldCancelDeletingAPost[jussy_, Roska666., jussy_, src\test\resources\uploads\testUpload.jpg, Testing create post caption](1)" classname="com.skilo.gui.PostTest" time="6.992">
     <failure message="The image was deleted, although it shouldn&apos;t be! expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: The image was deleted, although it shouldn't be! expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -279,8 +196,7 @@ WARNING: Unable to find an exact match for CDP version 127, returning the closes
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]></failure>
-    <system-out><![CDATA[The driver is about to be closed.
-DOM tree is fully loaded
+    <system-out><![CDATA[DOM tree is fully loaded
 DOM tree is fully loaded
 The user has clicked on element
 DOM tree is fully loaded
@@ -294,14 +210,13 @@ DOM tree is fully loaded
 DOM tree is fully loaded
 DOM tree is fully loaded
 ]]></system-out>
-    <system-err><![CDATA[Aug 06, 2024 1:58:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Aug 07, 2024 6:17:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 127
 ]]></system-err>
   </testcase>
-  <testcase name="verifyUserCanRegisterWithValidData" classname="com.skilo.gui.RegistrationTest" time="5.101">
-    <system-out><![CDATA[The driver is about to be closed.
-THE RANDOM GENERATED USERNAME IS: 301Student
-THE RANDOM GENERATED EMAIL IS: 015858302@abv.bg
+  <testcase name="verifyUserCanRegisterWithValidData" classname="com.skilo.gui.RegistrationTest" time="5.123">
+    <system-out><![CDATA[THE RANDOM GENERATED USERNAME IS: 488Student
+THE RANDOM GENERATED EMAIL IS: 061803488@abv.bg
 DOM tree is fully loaded
 The user has clicked on element
 DOM tree is fully loaded
@@ -316,11 +231,11 @@ DOM tree is fully loaded
 The user has clicked on element
 DOM tree is fully loaded
 ]]></system-out>
-    <system-err><![CDATA[Aug 06, 2024 1:58:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Aug 07, 2024 6:18:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 127
 ]]></system-err>
   </testcase>
-  <testcase name="verifyUserCanNotRegisterWithINValidData" classname="com.skilo.gui.RegistrationTest" time="5.605">
+  <testcase name="verifyUserCanNotRegisterWithINValidData" classname="com.skilo.gui.RegistrationTest" time="4.159">
     <failure message="User could successfully login with invalid data! expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: User could successfully login with invalid data! expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -357,9 +272,8 @@ WARNING: Unable to find an exact match for CDP version 127, returning the closes
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]></failure>
-    <system-out><![CDATA[The driver is about to be closed.
-THE RANDOM GENERATED USERNAME IS: melvin.stracke
-THE RANDOM GENERATED EMAIL IS: Kristina Windler
+    <system-out><![CDATA[THE RANDOM GENERATED USERNAME IS: alexander.kessler
+THE RANDOM GENERATED EMAIL IS: Darrin Weber
 DOM tree is fully loaded
 The user has clicked on element
 DOM tree is fully loaded
@@ -372,7 +286,7 @@ DOM tree is fully loaded
 The user has clicked on element
 DOM tree is fully loaded
 ]]></system-out>
-    <system-err><![CDATA[Aug 06, 2024 1:59:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Aug 07, 2024 6:18:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 127
 ]]></system-err>
   </testcase>

@@ -1,6 +1,5 @@
 package com.skillo.POM;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,7 +22,7 @@ public class PostModal extends ISkillo {
     public PostModal(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
-    };
+    }
 
     public boolean isImageVisible() {
         boolean isVisible = false;
@@ -35,30 +34,30 @@ public class PostModal extends ISkillo {
             e.printStackTrace();
             System.out.println("ERROR : The file is not visible");
             isVisible = false;
-        };
+        }
 
         return isVisible;
-    };
+    }
 
     public String getPostUser() {
         wait.until(ExpectedConditions.visibilityOf(postCreator));
         return postCreator.getText();
-    };
+    }
 
     public void clickOnBinIcon() {
         wait.until(ExpectedConditions.visibilityOf(deletePostButton));
         deletePostButton.click();
         waitPageTobeFullLoaded();
-    };
+    }
 
     public void confirmDeletingPost() {
         wait.until(ExpectedConditions.visibilityOf(confirmDeletingPost));
         confirmDeletingPost.click();
         waitPageTobeFullLoaded();
-    };
+    }
     public void cancelDeletingPost() {
         wait.until(ExpectedConditions.visibilityOf(cancelDeletingPost));
         cancelDeletingPost.click();
         waitPageTobeFullLoaded();
-    };
+    }
 }

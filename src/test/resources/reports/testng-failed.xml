@@ -3,15 +3,6 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="E:/Rossy/Skillo/SKAU14TAF(failed)" verbose="0">
     <classes>
-      <class name="com.skilo.gui.PostTest">
-        <methods>
-          <include name="verifyUserCouldCancelDeletingAPost" invocation-numbers="0"/>
-          <include name="setupTestSuite"/>
-          <include name="cleanFiles"/>
-          <include name="tearDownTest"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- com.skilo.gui.PostTest -->
       <class name="com.skilo.gui.RegistrationTest">
         <methods>
           <include name="verifyUserCanNotRegisterWithINValidData"/>
@@ -21,6 +12,15 @@
           <include name="setUpTest"/>
         </methods>
       </class> <!-- com.skilo.gui.RegistrationTest -->
+      <class name="com.skilo.gui.PostTest">
+        <methods>
+          <include name="verifyUserCouldCancelDeletingAPost" invocation-numbers="0"/>
+          <include name="setupTestSuite"/>
+          <include name="cleanFiles"/>
+          <include name="tearDownTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.skilo.gui.PostTest -->
     </classes>
   </test> <!-- E:/Rossy/Skillo/SKAU14TAF(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

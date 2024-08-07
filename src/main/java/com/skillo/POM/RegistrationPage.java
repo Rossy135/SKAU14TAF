@@ -1,21 +1,15 @@
 package com.skillo.POM;
 
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RegistrationPage extends ISkillo   {
 
-    public static final String REGISTER_PAGE_URL = "users/register";
-
-    @FindBy(xpath = "/html/body/app-root/div[2]/app-register/div/div/form/h4")
-    private WebElement registerPageHeaderTitle;
-    @FindBy (xpath = "/html/body/app-root/div[2]/app-register/div/div/form/div[1]/input")
+    @FindBy (xpath = "//input[@name=\"username\"]")
     private WebElement usernameInputField;
-    @FindBy (xpath = "/html/body/app-root/div[2]/app-register/div/div/form/div[2]/input")
+    @FindBy (xpath = "//input[@placeholder=\"email\"]")
     private WebElement emailInputField;
     @FindBy (xpath = "//*[@id=\"defaultRegisterFormPassword\"]")
     private WebElement passwordInputField;
@@ -28,8 +22,6 @@ public class RegistrationPage extends ISkillo   {
         super(driver);
         PageFactory.initElements(driver,this);
     }
-
-//User Actions
 
     public void provideUsername (String username) {
         typeTextInField(usernameInputField,username);
@@ -57,24 +49,5 @@ public class RegistrationPage extends ISkillo   {
         providePassword(password);
         provideConfirmPassword(password);
         clickOnSignInButton();
-    }
-
-    //Getters
-    public String getUserNamePlaceHolder () {
-        wait.until(ExpectedConditions.visibilityOf(usernameInputField));
-        return usernameInputField.getAttribute("value");
-    }
-
-    public boolean isUserNamePlaceHolderCorrect(String expectedUserNamePlaceHolder) {
-        boolean isPerRequirments = false;
-        try {
-            String actualUserNamePlaceHolder = getUserNamePlaceHolder();
-            isPerRequirments = expectedUserNamePlaceHolder.equals(actualUserNamePlaceHolder);
-
-        }catch (NoSuchElementException e){
-            System.out.println("ERROR ! The username placeHolder is not correct");
-            isPerRequirments = false;
-        }
-        return isPerRequirments;
     }
 }
